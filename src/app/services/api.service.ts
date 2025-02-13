@@ -16,7 +16,7 @@ export class ApiService {
   }
 
   getProduct(id: number):Observable<IProduct> {
-    return this._http.get<IProduct>(`$(this.urlBase)/${id}`);
+    return this._http.get<IProduct>(`${(this.urlBase)}/${id}`);
   }
 
 }
